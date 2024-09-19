@@ -80,8 +80,8 @@ else:
     print ("Unable to configure replication for repo ==> blr-docker-dev-local")
     print(response.text)
 '''
-# artifacts_in_repo = 'items.find({"repo":"blrcuration-docker-dev-virtual"}).include("repo","path","name","created")'
-artifacts_in_repo = 'items.find({"repo":"blrcuration-docker-dev-virtual"}).include("repo","path","name","created")'
+# artifacts_in_repo = 'items.find({"repo":"blr-docker-dev-virtual"}).include("repo","path","name","created")'
+artifacts_in_repo = 'items.find({"repo":"blr-docker-dev-virtual"}).include("repo","path","name","created")'
 response = requests.post(SOURCE_JPD_URL+ "/artifactory/api/search/aql" , data=artifacts_in_repo, headers=headers)
 if(response.status_code== 200):
     print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
@@ -116,7 +116,7 @@ if artifactslistjson["range"]["total"] > CHUNK_SIZE:
 
 
 '''
-response = requests.get(SOURCE_JPD_URL+ "/xray/api/v1/artifacts?&repo=blrcuration-docker-dev-virtual", headers=headers)
+response = requests.get(SOURCE_JPD_URL+ "/xray/api/v1/artifacts?&repo=blr-docker-dev-virtual", headers=headers)
 if(response.status_code== 200):
     print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     data=response.json()
