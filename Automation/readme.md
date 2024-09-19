@@ -26,8 +26,8 @@ Script will get xray vulnerability data based on repository name, cvss score and
 1. **Clone the repository**:
 
    ```sh
-   git clone <PS Scripts repo>
-   cd Hillsidetechnology
+   git clone <Scripts repo>
+   cd Test
    ```
 
 2. **Install required Python libraries**:
@@ -45,5 +45,5 @@ Script will get xray vulnerability data based on repository name, cvss score and
   Example:
   
    ```sh
-   python getxrayvulnerabilitydata.py blr-docker-ps-td 10 2024-08-26
+   python getxrayvulnerabilitydata.py blr-docker-dev-local 10 2024-08-26
    ```
