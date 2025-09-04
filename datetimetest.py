@@ -44,8 +44,8 @@ JPD_TOKEN=""
 data = {
             "url" : "https://<artifactoryurl>/artifactory/blr-docker-dev-local",
             "socketTimeoutMillis" : 15000,
-            "username" : "nareshp",
-            "password" : "Rakul123@#",
+            "username" : "",
+            "password" : "",
             "enableEventReplication" : "false",
             "enabled" : "true",
             "cronExp" : "0 0 12 * * ?",
